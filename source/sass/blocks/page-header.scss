@@ -1,0 +1,12 @@
+.page-header {
+  width: 100%;
+  background-color: $main-bg-color;
+
+  @media (max-width: $width-only-mobile) {
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

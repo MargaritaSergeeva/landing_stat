@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Statka</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicons/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+<div style="display: none">
+  <include src="build/img/sprite.svg"></include>
+</div>
+<header class="page-header">
+  <div class="container">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <div class="hamburger-menu">
+          <span class="hamburger-menu__item"></span>
+          <span class="hamburger-menu__item"></span>
+          <span class="hamburger-menu__item"></span>
+        </div>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper-logo">
+        <a class="main-nav__logo logo" aria-label="Логотип сайта Statka">
+          <picture>
+            <img class="logo__image" src="img/logo-main.svg" width="84" height="28" alt="Логотип сайта Statka">
+          </picture>
+        </a>
+      </div>
+      <ul class="main-nav__list site-list pop-up">
+        <li class="site-list__item">
+          <a class="site-list__link" href="#about-us">О нас</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#solutions">Наши решения</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#order">Разработка на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#spheres">Сферы применения наших решений</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#team">Команда</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#originality">Уникальность</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="index-main">
+  <section class="index-main__title-block title-block container">
+    <div class="title-block__wrapper">
+      <h1>
+        <b class="title">Statka &mdash;</b>
+        <span class="main-text">
+          разработчик программных решений в области автоматизированной закупки рекламного инвентаря и работе с большими
+          данными. Мы представляем интересы покупателя трафика, делаем работу прозрачной и эффективной.
+        </span>
+      </h1>
+      <div class="title-block__img-wrapper">
+        <div class="rect rect--1"></div>
+        <div class="rect rect--2"></div>
+        <picture>
+          <img class="title-block__img" src="img/chart.svg" width="660" height="356" alt="График">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <section class="index-main__about-us about-us main-section main-section--white">
+    <div class="about-us__wrapper main-section__wrapper container">
+      <h2 class="about-us__title main-section__title title">
+        <span class="main-section__title-text">
+          О нас<span class="cursor cursor--black">_</span>
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <p class="main-text main-text--black">Statka — молодая команда профессионалов из IT и рекламного рынков, которая образовала стартап в сфере Adtech.
+          Предлагая общественности наши продукты, мы хотим сделать рынок медиа более прозрачным, эффективным и понятным
+          для всех участников.</p>
+        <p class="main-text main-text--black">Каждый из нас много лет работал на рынке больших данных, искусственного интеллекта, диджитал продуктов
+          и знает, что большая часть существующих решений недостаточно автоматизированы.</p>
+        <div class="about-us__block">
+          <div class="about-us__block-wrapper">
+            <div class="rect rect--3"></div>
+            <p class="main-text">Автоматизация позволяет не только повысить скорость, но и кратно увеличить качество работы, поскольку
+              снижает и количество ошибок при работе с данными или рекламными платформами</p>
+            <p class="main-text">Каждое отдельное решение автоматизирует лишь небольшой фронт работ, с которым сталкиваются владельцы
+              инвентаря, рекламные платформы, рекламные агентства и клиенты.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="index-main__solution solution main-section">
+    <div class="solution__wrapper main-section__wrapper container">
+      <h2 class="solution__title main-section__title title">
+        <span class="main-section__title-text">
+          Наши решения<span class="cursor">_</span>
+        </span>
+      </h2>
+      <div class="solution__content main-section__content">
+        <ul class="solution__list">
+          <li class="solution__item">
+            <p class="main-text">Программное обеспечение для автоматизированной закупки трафика —
+              платформа, которая представляет интересы покупателя.
+              Ее задачей является автоматизированная закупка рекламного инвентаря по наименьшей стоимости,
+              максимально точно соответствующего требованиям рекламодателей.</p>
+            <p class="main-text">Для разных кампаний могут понадобиться разные DSP (Demand Side Platform — компании,
+              покупающие данные у поставщиков и применяющие их в рекламе). Для полноценной рекламной деятельности
+              необходимо обмениваться данными с несколькими платформами, плюс взаимодействовать с другими операторами
+              RTB-системы. Для этого мы создаем продукт, который объединит все популярные алгоритмы,
+              существующие на рынке, и позволит унифицировать работу всех поставщиков.</p>
+          </li>
+          <li class="solution__item">
+            <p class="main-text">Программное обеспечение для управления данными предоставляет доступ к инструментам
+              анализа и обмена данными, платформам на стороне спроса и платформам на стороне предложения.
+              Это улучшает таргетинг, персонализацию и настройку контента.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="index-main__order order main-section">
+    <div class="order__wrapper main-section__wrapper container">
+      <h2 class="order__title main-section__title title">
+        <span class="main-section__title-text">
+          Разработка на заказ<span class="cursor">_</span>
+        </span>
+      </h2>
+      <div class="order__content main-section__content">
+        <p class="main-text">Сила нашей команды в гибкости и высокой экспертизе в разных сферах разработки и
+          языках программирования. Благодаря разным компетенциям всех членов команды,
+          мы готовы разрабатывать программное обеспечение «под ключ» в минимально короткие сроки.</p>
+        <p class="main-text">Языки на которых мы пишем:</p>
+        <ul class="order__list">
+          <li class="order__item">
+            .NET Core
+          </li>
+          <li class="order__item">
+            Java
+          </li>
+          <li class="order__item">
+            Scala Spark
+          </li>
+          <li class="order__item">
+            Python React
+          </li>
+          <li>
+            <ul class="order__inner-list">
+              <li class="order__inner-item">
+                JS
+              </li>
+              <li class="order__inner-item">
+                <p>JavaScript</p>
+                <p>Python</p>
+                <p>Java</p>
+                <p>С/C++</p>
+              </li>
+              <li class="order__inner-item">
+                <p>PHP</p>
+                <p>C#</p>
+                <p>Go</p>
+                <p>Dart</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="order__inner-list">
+              <li class="order__inner-item">
+                БД
+              </li>
+              <li class="order__inner-item">
+                <p>ClickHouse</p>
+                <p>Postgres</p>
+              </li>
+              <li class="order__inner-item">
+                <p>Aerospike</p>
+                <p>HDFS+Hive RocksDB</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__tagline-wrapper">
+    <p class="page-footer__tagline">Удобные решения для сложных задач</p>
+  </div>
+  <div class="page-footer__wrapper container">
+
+    <section class="page-footer__copyright copyright">
+      <h2 class="visually-hidden">Информация о компании</h2>
+      <ul class="copyright__list">
+        <li class="copyright__item">
+          <p class="main-text main-text--title">ООО «Статка»</p>
+          <p class="main-text main-text--footer"><span>ОКВЭД 62.01</span> Разработка компьютерного
+            программного обеспечения</p>
+        </li>
+        <li class="copyright__item">
+          <p class="main-text main-text--footer">350002, г. Краснодар, ул. Северная, д. 393, офис 305</p>
+          <p class="main-text main-text--footer">ИНН 2310229757  ОГРН 1222300041798</p>
+        </li>
+        <li class="copyright__item">
+          <p class="main-text main-text--footer">8(929)844-69-25</p>
+          <p class="main-text main-text--footer">fin@kubanstatka.com</p>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+</footer>
+<script src="js/picturefill.min.js"></script>
+<script src="js/show-main-menu.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.main-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 38px;
+  padding-bottom: 30px;
+  @include indent;
+
+  &__wrapper-logo {
+    margin-right: 50px;
+  }
+
+  &__toggle {
+    display: none;
+    position: absolute;
+    top: 26px;
+    right: 15px;
+    z-index: 15;
+
+    width: 21px;
+    height: 20px;
+    padding: 0;
+
+    background-color: transparent;
+    background-image: url("../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+
+  @media (max-width: $width-only-mobile) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    @include indent-mobile;
+    .main-nav__toggle {
+      display: block;
+    }
+  }
+}
+

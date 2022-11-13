@@ -1,0 +1,8 @@
+.cursor {
+  color: $color-white;
+  animation: blink-animation 1.5s steps(3, start) infinite;
+
+  &--black {
+    color: $main-bg-color;
+  }
+}

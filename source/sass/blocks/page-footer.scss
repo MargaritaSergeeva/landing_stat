@@ -1,0 +1,57 @@
+.page-footer {
+  &__tagline-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url('../img/tagline-desktop.svg');
+    background-repeat: repeat-x;
+    background-position-x: center;
+    background-position-y: 0;
+    background-size: 1359px;
+  }
+
+  &__tagline {
+    margin: 0;
+    text-align: center;
+    font-family: "Ubuntu", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    color: $main-title-color;
+  }
+
+  &__wrapper {
+    @include indent;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  &__copyright {
+    margin-top: 65px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    &__tagline-wrapper {
+      background-repeat: repeat-x;
+      background-position-x: 0;
+      background-position-y: 10px;
+      background-size: 750px;
+    }
+
+    &__tagline {
+      font-size: 25px;
+      line-height: 29px;
+    }
+
+    &__wrapper {
+      @include indent-mobile;
+      padding-top: 25px;
+      padding-bottom: 8px;
+    }
+
+    &__copyright {
+      margin-top: 15px;
+    }
+  }
+}
+
+

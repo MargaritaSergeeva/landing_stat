@@ -1,0 +1,116 @@
+.about-us {
+  &__block {
+    position: relative;
+    margin-top: 67px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      top: 0;
+      bottom: 0;
+      left: -57px;
+      background-color: #C0BFCB;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      top: 50px;
+      left: -67px;
+      background-color: $btn-color;
+    }
+  }
+
+  &__block-wrapper {
+    padding-top: 63px;
+    padding-left: 115px;
+    padding-right: 120px;
+    padding-bottom: 40px;
+    position: relative;
+    background-color: $main-bg-color;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      top: 0;
+      bottom: 0;
+      left: 60px;
+      background-color: $color-white;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: calc((100vw - 1360px)/2);
+      top: 0;
+      bottom: 0;
+      left: calc(100% - 2px);
+      background-color: $main-bg-color;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    &__block-wrapper {
+      &::after {
+        width: 41px;
+      }
+    }
+  }
+
+  @media (max-width: $width-only-mobile) {
+    padding-bottom: 90px;
+    &__block {
+      margin-top: 54px;
+      padding-bottom: 51px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: calc(100% + 30px);
+        height: 2px;
+        top: auto;
+        bottom: 0;
+        left: -15px;
+        background-color: #C0BFCB;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: auto;
+        bottom: -6px;
+        left: auto;
+        right: 70px;
+        background-color: $btn-color;
+      }
+    }
+
+    &__block-wrapper {
+      padding: 0;
+      padding-top: 122px;
+      padding-left: 18px;
+      padding-bottom: 33px;
+
+      &::after {
+        width: 16px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: calc(100% + 16px);
+        height: 1px;
+        top: 64px;
+        bottom: auto;
+        z-index: 5;
+        left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 360px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: $main-color;
+
+  background-color: $main-bg-color;
+  overflow-x: hidden;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

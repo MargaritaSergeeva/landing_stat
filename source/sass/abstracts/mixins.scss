@@ -1,0 +1,16 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin indent-mobile {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@mixin indent {
+  padding-right: 40px;
+  padding-left: 40px;
+}

@@ -1,0 +1,37 @@
+.main-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: $main-text-color;
+
+  &--black {
+    color: rgba(4, 0, 50, 0.8);
+  }
+
+  &--title {
+    color: $color-white;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  &--footer {
+    color: $text-color-footer;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @media (max-width: $width-only-mobile) {
+    font-size: 16px;
+
+    &--title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &--footer {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}

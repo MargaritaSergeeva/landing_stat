@@ -1,0 +1,33 @@
+.logo {
+  display: block;
+  width: 84px;
+
+  line-height: 0;
+
+  &[href]:hover,
+  &[href]:focus {
+    outline: none;
+
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
+
+.logo__image {
+  width: 84px;
+  height: 28px;
+}
+
+@media (max-width: $width-only-mobile) {
+  .logo {
+    width: 71px;
+  }
+
+  .logo__image {
+    width: 71px;
+    height: 24px;
+  }
+}

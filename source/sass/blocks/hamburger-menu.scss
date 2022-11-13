@@ -1,0 +1,39 @@
+.hamburger-menu {
+  display: block;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+  height: 22px;
+  outline: none;
+  width: 22px;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &__item{
+    background-color: #fff;
+    display: block;
+    height: 2px;
+    margin: 0 0 6px;
+    transition: all 0.3s ease-in-out;
+    width: 22px;
+  }
+
+  &.open .hamburger-menu__item {
+    background-color: $btn-color;
+
+    &:first-child {
+      transform: rotate(45deg);
+      transform-origin: 0;
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+      transform-origin: 0;
+    }
+  }
+}

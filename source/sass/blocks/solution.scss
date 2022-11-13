@@ -1,0 +1,50 @@
+.solution {
+  background-image: url('../img/tagline-desktop.svg');
+  background-repeat: repeat-x;
+  background-position: center bottom 20px;
+  background-size: 1359px;
+
+  &__list {
+    @include list-reset;
+  }
+
+  &__item {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 41px;
+      top: -7px;
+      left: -45px;
+      background-repeat: no-repeat;
+      background-position-x: 0;
+      background-position-y: 0;
+      opacity: 0.5;
+    }
+
+    &:first-child {
+      &::before {
+        background-image: url('../img/1.svg');
+      }
+    }
+
+    &:last-child {
+      &::before {
+        background-image: url('../img/2.svg');
+      }
+    }
+  }
+
+  @media (max-width: $width-only-mobile) {
+    background-repeat: repeat-x;
+    background-size: 750px;
+
+    &__item {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
